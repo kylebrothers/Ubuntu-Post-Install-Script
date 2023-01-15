@@ -10,6 +10,7 @@ sudo apt update
 #sudo apt install -y nvidia-driver-515 nvidia-dkms-515
 
 # Apps
+sudo apt install -y curl
 sudo apt install -y gparted
 # sudo apt install -y synaptic
 sudo apt install -y gufw
