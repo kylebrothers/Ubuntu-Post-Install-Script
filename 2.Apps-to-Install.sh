@@ -169,28 +169,6 @@ sudo dpkg -i GitHubDesktop-linux-3.1.1-linux1.deb
 #### gitkraken-amd64.deb
 
 
-### Installing Docker
-sudo apt-get install -y \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
-sudo apt-get update
-sudo apt-get install -y docker-ce
-sudo apt-get install -y docker-compose-plugin
-sudo docker run hello-world
-# Linux post-install
-sudo groupadd docker
-sudo usermod -aG docker $USER
-sudo systemctl enable docker
-
-
 # Some Other Settings for Gnome DE distros
 ## Permanently enable Do Not Disturb (No Notifications)
 ### gsettings set org.gnome.desktop.notifications show-banners false
