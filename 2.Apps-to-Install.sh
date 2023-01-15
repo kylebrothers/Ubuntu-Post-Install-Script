@@ -111,9 +111,9 @@ flatpak update -y
 
 # Flatpak Apps
 ## AnyDesk
-flatpak install flathub com.anydesk.Anydesk -y
+# flatpak install flathub com.anydesk.Anydesk -y
 ## Tor Browser
-flatpak install flathub com.github.micahflee.torbrowser-launcher -y
+# flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 ## GIMP
 # flatpak install flathub org.gimp.GIMP -y
 ## Meld
@@ -138,8 +138,8 @@ flatpak install flathub com.github.micahflee.torbrowser-launcher -y
 # flatpak install flathub org.chromium.Chromium -y
 
 # Flatpak Clean Up
-flatpak uninstall --delete-data -y
-flatpak uninstall --unused -y
+# flatpak uninstall --delete-data -y
+# flatpak uninstall --unused -y
 
 # wget Apps
 ## BleachBit
