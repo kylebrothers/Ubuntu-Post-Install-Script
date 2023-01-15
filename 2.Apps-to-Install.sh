@@ -5,8 +5,9 @@
 # System Update
 sudo apt update
 
-#NVIDIA Drivers
-sudo apt install -y nvidia-driver-515 nvidia-dkms-515
+# NVIDIA Drivers
+# Prefer to keep the auto-installed drivers
+#sudo apt install -y nvidia-driver-515 nvidia-dkms-515
 
 # Apps
 sudo apt install -y gparted
