@@ -11,6 +11,7 @@ sudo apt update
 
 # Apps
 sudo apt install -y curl
+sudo apt install -y feh
 sudo apt install -y gparted
 # sudo apt install -y synaptic
 sudo apt install -y gufw
