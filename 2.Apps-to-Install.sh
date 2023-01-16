@@ -104,6 +104,13 @@ sudo apt update -qq
 #### sudo apt install -y yarn
 # sudo apt install -y brave-browser
 
+VirtualBox 7
+wget -O- https://www.virtualbox.org/download/oracle_vbox_2016.asc | sudo gpg --dearmor --yes --output /usr/share/keyrings/oracle-virtualbox-2016.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list
+### System Update
+sudo apt update -qq
+sudo apt install -y virtualbox-7.0
+
 ### If Node.js was installed, probably npm was installed along with it. So, consider updating npm to the latest version:
 # sudo npm config set fund false --location=global
 # sudo npm install -g npm@latest
