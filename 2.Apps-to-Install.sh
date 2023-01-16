@@ -115,8 +115,9 @@ sudo apt install -y virtualbox-7.0
 wget https://download.virtualbox.org/virtualbox/7.0.4/Oracle_VM_VirtualBox_Extension_Pack-7.0.4.vbox-extpack
 sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.4.vbox-extpack
 
-# I had a lot of trouble getting Virtualbox 7 to work. It seems the following line is what made it finally work
+# I had a lot of trouble getting Virtualbox 7 to work. It seems the following lines are what made it finally work
 sudo modprobe vboxdrv
+sudo modprobe vboxnetflt
 
 ### If Node.js was installed, probably npm was installed along with it. So, consider updating npm to the latest version:
 # sudo npm config set fund false --location=global
