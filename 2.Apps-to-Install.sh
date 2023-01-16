@@ -111,6 +111,13 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] 
 sudo apt update -qq
 sudo apt install -y virtualbox-7.0
 
+# The following 2 lines might need to be changed to match the version of Virtualbox actually installed
+wget https://download.virtualbox.org/virtualbox/7.0.4/Oracle_VM_VirtualBox_Extension_Pack-7.0.4.vbox-extpack
+sudo vboxmanage extpack install Oracle_VM_VirtualBox_Extension_Pack-7.0.4.vbox-extpack
+
+# I had a lot of trouble getting Virtualbox 7 to work. It seems the following line is what made it finally work
+sudo modprobe vboxdrv
+
 ### If Node.js was installed, probably npm was installed along with it. So, consider updating npm to the latest version:
 # sudo npm config set fund false --location=global
 # sudo npm install -g npm@latest
