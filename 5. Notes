@@ -1,3 +1,6 @@
 After running the bash scripts, I did the following:
 1. Clone this repository locally: https://github.com/AbdBarho/stable-diffusion-webui-docker
 2. Follow the instructions to install, located here: https://github.com/AbdBarho/stable-diffusion-webui-docker/wiki/Setup
+
+When VirtualBox updates, it was necessary to reset startup virtual machine at boot. Instructions are here:
+https://askubuntu.com/questions/404665/how-to-start-virtual-box-machines-automatically-when-booting
