@@ -13,3 +13,6 @@ https://github.com/christgau/wsdd
 
 To make it now require a password when accessing from Windows:
 https://serverfault.com/questions/630631/how-to-make-samba-share-to-not-ask-for-password
+
+To download an entire website:
+wget -r -l 3 -p --content-disposition -w 10 --random-wait --user-agent="Mozilla" --auth-no-challenge -k http://www.uoflgenpeds.info/index.php/Provider_Home
